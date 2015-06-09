@@ -1,9 +1,18 @@
-Twitter.TweetController = Ember.Controller.extend({
+Twitter.TweetController = Ember.ArrayController.extend({
   actions: {
     tweet: function() {
-      var tweet = text;
-      var newTweet = {text: tweet.value};
-      tweets.addObject(newTweet);
+      var newTweet = this.get('text');
+      tweets.addObject ({
+        text: newTweet,
+        date: new Date(),
+        date_value: new Date().getTime(),
+        comment:[]
+      });
+        this.set('text');
     }
   }
 });
+
+
+// var tweet = text;
+// var newTweet = {text: tweet.value};
