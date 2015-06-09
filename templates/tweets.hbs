@@ -1,0 +1,30 @@
+<h1>Tweets, yo</h1>
+
+{{#each tweets}}
+  <li>{{body}}</li>
+{{/each}}
+
+
+<!-- {{#if isEditing}}
+
+{{#each tweets}}
+  <form>
+    <div class="form-group">
+      <label for="body"></label>
+      {{input id="body" class="form-control" value=body}}
+    </div>
+
+    <button class="btn btn-primary" {{action 'save'}}>Save</button>
+  </form>
+{{/each}}
+
+{{else}}
+
+<ul>
+  {{#each tweets}}
+    <li>{{body}}</li>
+    <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+  {{/each}}
+</ul>
+
+{{/if}} -->
