@@ -1,5 +1,16 @@
 <h1>Tweets, yo</h1>
 
-{{#each}}
-  <li>{{date}}:  {{text}}</li>
+{{#each tweet in tweets}}
+  <li>{{tweet.date}}</li>
+  <li>{{tweet.text}}</li>
+  <form>
+    <div class="form-group">
+      {{input class="reply form-control" value=tweet.reply}}
+    </div>
+    <button class="btn btn-info" {{action 'addReply' tweet}}>Reply</button>
+  </form>
+  {{#each reply in tweet.comments}}
+    <li>{{comments.reply}}</li>
+  {{/each}}
+
 {{/each}}

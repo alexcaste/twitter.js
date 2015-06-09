@@ -1,17 +1,14 @@
 var tweets = [
   {
-    id: '1',
-    date: '6/9/15',
+    date: new Date('Thu, 01 Jan 1979 00:00:00 GMT-0400'),
     text: "tweet tweet celebrity bullshit"
   },
   {
-    id: '2',
-    date: '6/8/15',
+    date: new Date('Thu, 01 Jan 1973 00:00:00 GMT-0400'),
     text: "the president got laid"
   },
   {
-    id: '3',
-    date: '6/10/15',
+    date: new Date('Thu, 01 Jan 1975 00:00:00 GMT-0400'),
     text: "here is a picture of my lunch"
   }
 ];
