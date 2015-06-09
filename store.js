@@ -1,14 +1,20 @@
 var tweets = [
   {
     id: '1',
-    body: "tweet tweet celebrity bullshit"
+    date: '6/9/15',
+    time: 'morning',
+    text: "tweet tweet celebrity bullshit"
   },
   {
     id: '2',
-    body: "the president got laid"
+    date: '6/9/15',
+    time: 'afternoon',
+    text: "the president got laid"
   },
   {
     id: '3',
-    body: "here is a picture of my lunch"
+    date: '6/9/15',
+    time: 'evening',
+    text: "here is a picture of my lunch"
   }
 ];
