@@ -5,7 +5,7 @@ Twitter.TweetsController = Ember.Controller.extend({
 
   actions: {
     isClicked: function() {
-      this.set('clicked', !this.get('clicked'));
+      this.set('clicked');
     },
 
     addReply: function(tweet) {
